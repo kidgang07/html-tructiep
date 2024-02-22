@@ -1,0 +1,67 @@
+header {
+    background-color: #01b243;
+    height: 60px;
+    margin-bottom: 1.5rem;
+
+    nav.navbar {
+        padding: 0;
+        height: 100%;
+    }
+
+    a.navbar-brand {
+        background-color: #fff;
+        border-radius: 0 999px 999px 0;
+        height: 100%;
+        width: 280px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 120%;
+            height: 100%;
+            right: 100%;
+            top: 0;
+            background-color: #fff;
+            z-index: 1;
+        }
+
+        img {
+            width: 250px;
+            height: 50px;
+            object-fit: contain;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    ul.navbar-nav {
+        margin-left: 1rem;
+
+        a {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #fff;
+            opacity: 0.85;
+            font-family: "Oswald", sans-serif;
+        }
+
+        li {
+            margin: 0 0.7rem;
+        }
+
+        li:last-child {
+            a {
+                color: transparent !important;
+                display: inline-block;
+                width: 150px;
+                height: 40px;
+                background: url(../assets/img/bongdainfo.gif) no-repeat center center !important;
+                white-space: nowrap;
+                background-size: cover !important;
+            }
+        }
+    }
+}
