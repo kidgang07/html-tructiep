@@ -2,8 +2,6 @@ body {
   background-color: #141417;
 }
 
-$secondary-color: #1a1d23;
-$font-osw: "Oswald", sans-serif;
 .main {
   .content-page {
     section.matches-section {
@@ -287,6 +285,7 @@ $font-osw: "Oswald", sans-serif;
       }
     }
     section.news-section {
+      margin-bottom: 4rem;
       > .row .row {
         margin: 0px;
       }

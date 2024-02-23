@@ -101,6 +101,21 @@ $success: #7952b3;
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+// Custom Variable
+$secondary-color: #1a1d23;
+$font-osw: "Oswald", sans-serif;
+
+@media  screen and (min-width: 1280px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+@media (min-width: 1675px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
 // Custom SCSS
 @import "icon-list";
 @import "header";

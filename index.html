@@ -1,666 +1,1170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Xoi Lac</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/xoilac.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Lịch Thi Đấu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Highlight</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Soi Kèo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BXH</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kết quả</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tỷ Lệ Kèo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bongdainfo</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="logo-sticky">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/xoilac.png" alt="logo" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lịch Thi Đấu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Highlight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Soi Kèo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BXH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kết quả</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tỷ Lệ Kèo</a>
+              </li>
+              <li class="nav-item top-dealer">
+                <a class="nav-link" href="#">Top nhà cái</a>
+              </li>
+              <li class="nav-item nav-item-8xbet">
+                <a class="nav-link" href="#">Cược 8xbet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bongdainfo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="sub-menu d-none d-lg-flex">
+        <div class="container">
+          <ul>
+            <li><a href="">&nbsp;</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <div class="main container">
-        <div class="content-page">
-            <section class="matches-section" data-bs-theme="dark">
-                <div class=matches-title>
-                    <h1>Link Xem Bóng Đá Trực Tuyến tốc độ cao, Trực Tiếp Bóng Đá Hôm Nay</h1>
+      <div class="content-page">
+        <section class="matches-section" data-bs-theme="dark">
+          <div class="matches-title">
+            <h1>
+              Link Xem Bóng Đá Trực Tuyến tốc độ cao, Trực Tiếp Bóng Đá Hôm Nay
+            </h1>
+          </div>
+          <div class="matches-filter">
+            <div class="row">
+              <div class="col-lg-9 col-12">
+                <div class="matches-tab clearfix">
+                  <ul class="tab-filter d-none d-lg-flex">
+                    <li>
+                      <a href="#" data-filter="now" class="tab-now"
+                        >Đang đá
+                        <span class="num">11</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-filter="hot" class="tab-hot"
+                        >Trận Hot
+                        <span class="num">41</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        data-filter="commentator"
+                        class="tab-commentator"
+                        >BLV Xôi Lạc
+                        <span class="num">97</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-filter="today" class="tab-today"
+                        >Hôm nay
+                        <span class="num">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-filter="tomorrow" class="tab-tomorrow"
+                        >Ngày mai
+                        <span class="num">130</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-filter="all" class="tab-all active"
+                        >Tất cả
+                        <span class="num">547</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="matches-filter">
-                    <div class="row">
-                        <div class="col-lg-9 col-12">
-                            <div class="matches-tab clearfix">
-                                <ul class="tab-filter d-none d-lg-flex">
-                                    <li>
-                                        <a href="#" data-filter="now" class="tab-now">Đang đá
-                                            <span class="num">11</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" data-filter="hot" class="tab-hot">Trận Hot
-                                            <span class="num">41</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" data-filter="commentator" class="tab-commentator">BLV Xôi Lạc
-                                            <span class="num">97</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" data-filter="today" class="tab-today">Hôm nay
-                                            <span class="num">10</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" data-filter="tomorrow" class="tab-tomorrow">Ngày mai
-                                            <span class="num">130</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" data-filter="all" class="tab-all active">Tất cả
-                                            <span class="num">547</span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-12">
-                            <div class="matches-leagues">
-                                <div class="form-group">
-                                    <select class="form-select">
-                                        <option selected>Tất cả giải đấu</option>
-                                        <option value="">Ngoại Hạng Ireland</option>
-                                        <option value="">VĐQG Áo</option>
-                                        <option value="">VĐQG Bỉ</option>
-                                        <option value="">VĐQG Ba Lan</option>
-                                        <option value="">Ngoại Hạng Đan Mạch</option>
-                                        <option value="">Bundesliga</option>
-                                        <option value="">Bundesliga 2</option>
-                                        <option value="">VĐQG Thổ Nhĩ Kỳ</option>
-                                        <option value="">Italian Serie B</option>
-                                        <option value="">Ligue 1</option>
-                                        <option value="">MLS_Nhà Nghề Mỹ</option>
-                                        <option value="">La Liga</option>
-                                        <option value="">Giao Hữu CLB</option>
-                                        <option value="">Ligue 2</option>
-                                        <option value="">VĐQG Hy Lạp</option>
-                                        <option value="">VĐQG Bồ Đào Nha</option>
-                                        <option value="">La Liga 2</option>
-                                        <option value="">Sweden Cupen</option>
-                                        <option value="">Serie A</option>
-                                        <option value="">J1 League</option>
-                                        <option value="">VĐQG Hà Lan</option>
-                                        <option value="">Ngoại Hạng Anh</option>
-                                        <option value="">Hạng 2 Hà Lan</option>
-                                        <option value="">VĐQG Thụy Sĩ</option>
-                                        <option value="">Hạng Nhất Anh</option>
-                                        <option value="">England League 1</option>
-                                        <option value="">Copa Libertadores</option>
-                                        <option value="">VĐQG Thái Lan</option>
-                                        <option value="">Hạng Nhất Thổ Nhĩ Kỳ</option>
-                                        <option value="">LIGA Mexico</option>
-                                        <option value="">VĐQG Uruguay</option>
-                                        <option value="">UAE Division 1 Group A</option>
-                                        <option value="">VĐQG Colombia</option>
-                                        <option value="">AFC Cup</option>
-                                        <option value="">Israel Leumit League</option>
-                                        <option value="">Recopa Sudamericana</option>
-                                        <option value="">UAE Pro-League</option>
-                                        <option value="">Ngoại hạng Hồng Kông</option>
-                                        <option value="">Chile Primera B</option>
-                                        <option value="">Hạng Nhất Ba Lan</option>
-                                        <option value="">VĐQG Marốc</option>
-                                        <option value="">VĐQG Bulgaria</option>
-                                        <option value="">Spanish Bizkaia-Tercera Division</option>
-                                        <option value="">English Women Conference South</option>
-                                        <option value="">VĐQG Slovakia</option>
-                                        <option value="">Oman Professional League</option>
-                                        <option value="">Italy C1</option>
-                                        <option value="">Brazil Campeonato Catarinense Division 1</option>
-                                        <option value="">AFC Champions League</option>
-                                        <option value="">VĐQG Ả-rập Xê-út</option>
-                                        <option value="">UEFA Champions League</option>
-                                        <option value="">France Ligue 3</option>
-                                        <option value="">UEFA Europa League</option>
-                                        <option value="">Qatar League</option>
-                                        <option value="">Ngoại Hạng Azerbaijan</option>
-                                        <option value="">Argentine Division 2</option>
-                                        <option value="">Hạng Nhất Croatia</option>
-                                        <option value="">OFC Champions League</option>
-                                        <option value="">Greece Cup</option>
-                                        <option value="">I-League</option>
-                                        <option value="">A-League</option>
-                                        <option value="">Iceland League Cup</option>
-                                        <option value="">Brazil Campeonato Baiano Division</option>
-                                        <option value="">VĐQG Bolivia</option>
-                                        <option value="">German 3.Liga</option>
-                                        <option value="">VĐQG Costa Rica</option>
-                                        <option value="">Syrian League</option>
-                                        <option value="">VĐQG Romania</option>
-                                        <option value="">England Johnstone</option>
-                                        <option value="">CONCACAF Champions League</option>
-                                        <option value="">Hạng Nhất Paraguay</option>
-                                        <option value="">Brazil Campeonato Gaucho</option>
-                                        <option value="">J2 League</option>
-                                        <option value="">Albania Super league</option>
-                                        <option value="">VĐQG Chile</option>
-                                        <option value="">Saudi Arabia Division 1</option>
-                                        <option value="">NSW Premier League</option>
-                                        <option value="">UEFA European Women</option>
-                                        <option value="">VĐQG Hungary</option>
-                                        <option value="">VIC Premier League</option>
-                                        <option value="">Italian Youth Cup</option>
-                                        <option value="">England Conference</option>
-                                        <option value="">V.League 1</option>
-                                        <option value="">Copa do Brasil</option>
-                                        <option value="">Hạng Nhất Đan Mạch</option>
-                                        <option value="">Ukraine U21 Liga</option>
-                                        <option value="">Hạng Nhất Séc</option>
-                                        <option value="">Scottish Highland Football League</option>
-                                        <option value="">VĐQG Slovenia</option>
-                                        <option value="">Hạng 2 Mexico</option>
-                                        <option value="">Hạng 2 Bồ Đào Nha</option>
-                                        <option value="">Ngoại Hạng Israel</option>
-                                        <option value="">Hạng Nhất Áo</option>
-                                        <option value="">Norwegian Junior U19</option>
-                                        <option value="">Cyprus Cup</option>
-                                        <option value="">Brazil Campeonato Paulista</option>
-                                        <option value="">VĐQG Jordan</option>
-                                        <option value="">VĐQG Ukraina</option>
-                                        <option value="">VĐQG Serbia</option>
-                                        <option value="">CAF Champions League</option>
-                                        <option value="">Cyprus 1 Division</option>
-                                        <option value="">Ngoại Hạng Armenia</option>
-                                        <option value="">VĐQG Iran</option>
-                                        <option value="">Finland League Cup</option>
-                                        <option value="">Women’s West Asian Championship</option>
-                                        <option value="">VĐQG Ecuador</option>
-                                        <option value="">Bahrain Division</option>
-                                        <option value="">Vô địch Trẻ Ý</option>
-                                        <option value="">Australia West Premier Bam Series</option>
-                                        <option value="">VĐQG Guatemala</option>
-                                        <option value="">South Africa League Cup</option>
-                                        <option value="">Hạng 3 Thái Lan</option>
-                                        <option value="">Brazil Campeonato Amapaense</option>
-                                        <option value="">Livonia Winter League</option>
-                                        <option value="">Portugal Champions NACIONAL Juniores A 2</option>
-                                        <option value="">VĐQG Indonesia</option>
-                                        <option value="">Armenia Division 2</option>
-                                        <option value="">South Australian Premier</option>
-                                        <option value="">UEFA Women Nations League</option>
-                                        <option value="">Hạng 2 Phần Lan</option>
-                                        <option value="">Hạng 2 Romania</option>
-                                        <option value="">Australia Northern NSW League</option>
-                                        <option value="">Columbia women\\\'s League</option>
-                                        <option value="">Victorian State League Division 1</option>
-                                        <option value="">Brazil Campeonato Paulista B</option>
-                                        <option value="">Argentina Cup</option>
-                                        <option value="">Uruguay Cup</option>
-                                        <option value="">Gibraltar Premier Division</option>
-                                        <option value="">Uganda Premier League</option>
-                                        <option value="">Qatar B</option>
-                                        <option value="">Ngoại Hạng Iraq</option>
-                                        <option value="">Australia Queensland Women</option>
-                                        <option value="">Cameroon Elite One</option>
-                                        <option value="">Trinidad and Tobago Pro League</option>
-                                        <option value="">Brazil Campeonato Sul-Matogrossense</option>
-                                        <option value="">Panama Liga Nacional de Ascenso</option>
-                                        <option value="">Concacaf Gold Womens Cup</option>
-                                        <option value="">Switzerland Promotion League</option>
-                                        <option value="">Australia NSW Super League</option>
-                                        <option value="">Azerbaijan Division 2</option>
-                                        <option value="">Brasil Campeonato do Nordeste Primeira</option>
-                                        <option value="">Fiji National League</option>
-                                        <option value="">English Womens Conference North</option>
-                                        <option value="">Cúp Khu vực Đức</option>
-                                        <option value="">Vòng Loại Olympic Nữ 2024</option>
-                                        <option value="">J3 League</option>
-                                        <option value="">Giao Hữu Quốc Tế</option>
-                                        <option value="">Ngoại Hạng Bangladesh</option>
-                                        <option value="">Indian Super League</option>
-                                        <option value="">UEFA Europa Conference</option>
-                                        <option value="">BRA SPB</option>
-                                        <option value="">VĐQG Campuchia</option>
-                                        <option value="">Thai League 2</option>
-                                        <option value="">V.League 2</option>
-                                        <option value="">QLD Premier League</option>
-                                        <option value="">FFSA Premier League</option>
-                                        <option value="">BRA SE</option>
-                                        <option value="">Colombia Copa Premier</option>
-                                        <option value="">International Development s Cup</option>
-                                        <option value="">Brazil Campeonato Capixaba</option>
-                                        <option value="">NBA _ Nhà Nghề Mỹ</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+              </div>
+              <div class="col-lg-3 col-12">
+                <div class="matches-leagues">
+                  <div class="form-group">
+                    <select class="form-select">
+                      <option selected>Tất cả giải đấu</option>
+                      <option value="">Ngoại Hạng Ireland</option>
+                      <option value="">VĐQG Áo</option>
+                      <option value="">VĐQG Bỉ</option>
+                      <option value="">VĐQG Ba Lan</option>
+                      <option value="">Ngoại Hạng Đan Mạch</option>
+                      <option value="">Bundesliga</option>
+                      <option value="">Bundesliga 2</option>
+                      <option value="">VĐQG Thổ Nhĩ Kỳ</option>
+                      <option value="">Italian Serie B</option>
+                      <option value="">Ligue 1</option>
+                      <option value="">MLS_Nhà Nghề Mỹ</option>
+                      <option value="">La Liga</option>
+                      <option value="">Giao Hữu CLB</option>
+                      <option value="">Ligue 2</option>
+                      <option value="">VĐQG Hy Lạp</option>
+                      <option value="">VĐQG Bồ Đào Nha</option>
+                      <option value="">La Liga 2</option>
+                      <option value="">Sweden Cupen</option>
+                      <option value="">Serie A</option>
+                      <option value="">J1 League</option>
+                      <option value="">VĐQG Hà Lan</option>
+                      <option value="">Ngoại Hạng Anh</option>
+                      <option value="">Hạng 2 Hà Lan</option>
+                      <option value="">VĐQG Thụy Sĩ</option>
+                      <option value="">Hạng Nhất Anh</option>
+                      <option value="">England League 1</option>
+                      <option value="">Copa Libertadores</option>
+                      <option value="">VĐQG Thái Lan</option>
+                      <option value="">Hạng Nhất Thổ Nhĩ Kỳ</option>
+                      <option value="">LIGA Mexico</option>
+                      <option value="">VĐQG Uruguay</option>
+                      <option value="">UAE Division 1 Group A</option>
+                      <option value="">VĐQG Colombia</option>
+                      <option value="">AFC Cup</option>
+                      <option value="">Israel Leumit League</option>
+                      <option value="">Recopa Sudamericana</option>
+                      <option value="">UAE Pro-League</option>
+                      <option value="">Ngoại hạng Hồng Kông</option>
+                      <option value="">Chile Primera B</option>
+                      <option value="">Hạng Nhất Ba Lan</option>
+                      <option value="">VĐQG Marốc</option>
+                      <option value="">VĐQG Bulgaria</option>
+                      <option value="">Spanish Bizkaia-Tercera Division</option>
+                      <option value="">English Women Conference South</option>
+                      <option value="">VĐQG Slovakia</option>
+                      <option value="">Oman Professional League</option>
+                      <option value="">Italy C1</option>
+                      <option value="">
+                        Brazil Campeonato Catarinense Division 1
+                      </option>
+                      <option value="">AFC Champions League</option>
+                      <option value="">VĐQG Ả-rập Xê-út</option>
+                      <option value="">UEFA Champions League</option>
+                      <option value="">France Ligue 3</option>
+                      <option value="">UEFA Europa League</option>
+                      <option value="">Qatar League</option>
+                      <option value="">Ngoại Hạng Azerbaijan</option>
+                      <option value="">Argentine Division 2</option>
+                      <option value="">Hạng Nhất Croatia</option>
+                      <option value="">OFC Champions League</option>
+                      <option value="">Greece Cup</option>
+                      <option value="">I-League</option>
+                      <option value="">A-League</option>
+                      <option value="">Iceland League Cup</option>
+                      <option value="">
+                        Brazil Campeonato Baiano Division
+                      </option>
+                      <option value="">VĐQG Bolivia</option>
+                      <option value="">German 3.Liga</option>
+                      <option value="">VĐQG Costa Rica</option>
+                      <option value="">Syrian League</option>
+                      <option value="">VĐQG Romania</option>
+                      <option value="">England Johnstone</option>
+                      <option value="">CONCACAF Champions League</option>
+                      <option value="">Hạng Nhất Paraguay</option>
+                      <option value="">Brazil Campeonato Gaucho</option>
+                      <option value="">J2 League</option>
+                      <option value="">Albania Super league</option>
+                      <option value="">VĐQG Chile</option>
+                      <option value="">Saudi Arabia Division 1</option>
+                      <option value="">NSW Premier League</option>
+                      <option value="">UEFA European Women</option>
+                      <option value="">VĐQG Hungary</option>
+                      <option value="">VIC Premier League</option>
+                      <option value="">Italian Youth Cup</option>
+                      <option value="">England Conference</option>
+                      <option value="">V.League 1</option>
+                      <option value="">Copa do Brasil</option>
+                      <option value="">Hạng Nhất Đan Mạch</option>
+                      <option value="">Ukraine U21 Liga</option>
+                      <option value="">Hạng Nhất Séc</option>
+                      <option value="">
+                        Scottish Highland Football League
+                      </option>
+                      <option value="">VĐQG Slovenia</option>
+                      <option value="">Hạng 2 Mexico</option>
+                      <option value="">Hạng 2 Bồ Đào Nha</option>
+                      <option value="">Ngoại Hạng Israel</option>
+                      <option value="">Hạng Nhất Áo</option>
+                      <option value="">Norwegian Junior U19</option>
+                      <option value="">Cyprus Cup</option>
+                      <option value="">Brazil Campeonato Paulista</option>
+                      <option value="">VĐQG Jordan</option>
+                      <option value="">VĐQG Ukraina</option>
+                      <option value="">VĐQG Serbia</option>
+                      <option value="">CAF Champions League</option>
+                      <option value="">Cyprus 1 Division</option>
+                      <option value="">Ngoại Hạng Armenia</option>
+                      <option value="">VĐQG Iran</option>
+                      <option value="">Finland League Cup</option>
+                      <option value="">Women’s West Asian Championship</option>
+                      <option value="">VĐQG Ecuador</option>
+                      <option value="">Bahrain Division</option>
+                      <option value="">Vô địch Trẻ Ý</option>
+                      <option value="">
+                        Australia West Premier Bam Series
+                      </option>
+                      <option value="">VĐQG Guatemala</option>
+                      <option value="">South Africa League Cup</option>
+                      <option value="">Hạng 3 Thái Lan</option>
+                      <option value="">Brazil Campeonato Amapaense</option>
+                      <option value="">Livonia Winter League</option>
+                      <option value="">
+                        Portugal Champions NACIONAL Juniores A 2
+                      </option>
+                      <option value="">VĐQG Indonesia</option>
+                      <option value="">Armenia Division 2</option>
+                      <option value="">South Australian Premier</option>
+                      <option value="">UEFA Women Nations League</option>
+                      <option value="">Hạng 2 Phần Lan</option>
+                      <option value="">Hạng 2 Romania</option>
+                      <option value="">Australia Northern NSW League</option>
+                      <option value="">Columbia women\\\'s League</option>
+                      <option value="">
+                        Victorian State League Division 1
+                      </option>
+                      <option value="">Brazil Campeonato Paulista B</option>
+                      <option value="">Argentina Cup</option>
+                      <option value="">Uruguay Cup</option>
+                      <option value="">Gibraltar Premier Division</option>
+                      <option value="">Uganda Premier League</option>
+                      <option value="">Qatar B</option>
+                      <option value="">Ngoại Hạng Iraq</option>
+                      <option value="">Australia Queensland Women</option>
+                      <option value="">Cameroon Elite One</option>
+                      <option value="">Trinidad and Tobago Pro League</option>
+                      <option value="">
+                        Brazil Campeonato Sul-Matogrossense
+                      </option>
+                      <option value="">Panama Liga Nacional de Ascenso</option>
+                      <option value="">Concacaf Gold Womens Cup</option>
+                      <option value="">Switzerland Promotion League</option>
+                      <option value="">Australia NSW Super League</option>
+                      <option value="">Azerbaijan Division 2</option>
+                      <option value="">
+                        Brasil Campeonato do Nordeste Primeira
+                      </option>
+                      <option value="">Fiji National League</option>
+                      <option value="">English Womens Conference North</option>
+                      <option value="">Cúp Khu vực Đức</option>
+                      <option value="">Vòng Loại Olympic Nữ 2024</option>
+                      <option value="">J3 League</option>
+                      <option value="">Giao Hữu Quốc Tế</option>
+                      <option value="">Ngoại Hạng Bangladesh</option>
+                      <option value="">Indian Super League</option>
+                      <option value="">UEFA Europa Conference</option>
+                      <option value="">BRA SPB</option>
+                      <option value="">VĐQG Campuchia</option>
+                      <option value="">Thai League 2</option>
+                      <option value="">V.League 2</option>
+                      <option value="">QLD Premier League</option>
+                      <option value="">FFSA Premier League</option>
+                      <option value="">BRA SE</option>
+                      <option value="">Colombia Copa Premier</option>
+                      <option value="">International Development s Cup</option>
+                      <option value="">Brazil Campeonato Capixaba</option>
+                      <option value="">NBA _ Nhà Nghề Mỹ</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="matches-result">
+            <div class="row row-cols-1 row-cols-lg-2 g-3">
+              <div class="col">
+                <div class="match-item">
+                  <a href="#"></a>
+                  <div class="match-item-header">
+                    <span class="match-league">UEFA Champions League</span>
+                    <span class="match-date"> 03:00 - 22/02 </span>
+                  </div>
+                  <div class="match-item-body">
+                    <div class="match-team match-team-home">
+                      <img src="assets/img/team-1.png" alt="Napoli" />
+                      <span>Napoli</span>
                     </div>
-                </div>
-                <div class="matches-result">
-                    <div class="row row-cols-1 row-cols-lg-2 g-3">
-                        <div class="col">
-                            <div class="match-item">
-                                <a href="#"></a>
-                                <div class="match-item-header">
-                                    <span class="match-league">UEFA Champions League</span>
-                                    <span class="match-date">
-                                        03:00 - 22/02
-                                    </span>
-                                </div>
-                                <div class="match-item-body">
-                                    <div class="match-team match-team-home">
-                                        <img src="assets/img/team-1.png" alt="Napoli">
-                                        <span>Napoli</span>
-                                    </div>
-                                    <div class="match-status">
-                                        <div class="match-time time-bg">Hiệp 2: 90+'</div>
-                                        <div class="match-score">1 - 1</div>
-                                    </div>
-                                    <div class="match-team match-team-away">
-                                        <img src="assets/img/team-2.png" alt="FC Barcelona">
-                                        <span>FC Barcelona</span>
-                                    </div>
-                                </div>
-                                <div class="match-item-footer gap-3">
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="match-item match-hot">
-                                <a href="#"></a>
-                                <div class="match-item-header">
-                                    <span class="match-league">UEFA Champions League</span>
-                                    <span class="match-date">
-                                        03:00 - 22/02
-                                    </span>
-                                </div>
-                                <div class="match-item-body">
-                                    <div class="match-team match-team-home">
-                                        <img src="assets/img/team-1.png" alt="Napoli">
-                                        <span>Napoli</span>
-                                    </div>
-                                    <div class="match-status">
-                                        <div class="match-time d-none"></div>
-                                        <div class="match-vs">vs</div>
-                                    </div>
-                                    <div class="match-team match-team-away">
-                                        <img src="assets/img/team-2.png" alt="FC Barcelona">
-                                        <span>FC Barcelona</span>
-                                    </div>
-                                </div>
-                                <div class="match-item-footer gap-3">
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="match-item match-hot">
-                                <a href="#"></a>
-                                <div class="match-item-header">
-                                    <span class="match-league">UEFA Champions League</span>
-                                    <span class="match-date">
-                                        03:00 - 22/02
-                                    </span>
-                                </div>
-                                <div class="match-item-body">
-                                    <div class="match-team match-team-home">
-                                        <img src="assets/img/team-1.png" alt="Napoli">
-                                        <span>Napoli</span>
-                                    </div>
-                                    <div class="match-status">
-                                        <div class="match-time d-none"></div>
-                                        <div class="match-vs">vs</div>
-                                    </div>
-                                    <div class="match-team match-team-away">
-                                        <img src="assets/img/team-2.png" alt="FC Barcelona">
-                                        <span>FC Barcelona</span>
-                                    </div>
-                                </div>
-                                <div class="match-item-footer gap-3">
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="match-item">
-                                <a href="#"></a>
-                                <div class="match-item-header">
-                                    <span class="match-league">UEFA Champions League</span>
-                                    <span class="match-date">
-                                        03:00 - 22/02
-                                    </span>
-                                </div>
-                                <div class="match-item-body">
-                                    <div class="match-team match-team-home">
-                                        <img src="assets/img/team-1.png" alt="Napoli">
-                                        <span>Napoli</span>
-                                    </div>
-                                    <div class="match-status">
-                                        <div class="match-time time-bg">Kết thúc</div>
-                                        <div class="match-score">1 - 1</div>
-                                    </div>
-                                    <div class="match-team match-team-away">
-                                        <img src="assets/img/team-2.png" alt="FC Barcelona">
-                                        <span>FC Barcelona</span>
-                                    </div>
-                                </div>
-                                <div class="match-item-footer gap-3">
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="match-item">
-                                <a href="#"></a>
-                                <div class="match-item-header">
-                                    <span class="match-league">UEFA Champions League</span>
-                                    <span class="match-date">
-                                        03:00 - 22/02
-                                    </span>
-                                </div>
-                                <div class="match-item-body">
-                                    <div class="match-team match-team-home">
-                                        <img src="assets/img/team-1.png" alt="Napoli">
-                                        <span>Napoli</span>
-                                    </div>
-                                    <div class="match-status">
-                                        <div class="match-time time-bg">Hiệp 1: 45+'</div>
-                                        <div class="match-score">1 - 1</div>
-                                    </div>
-                                    <div class="match-team match-team-away">
-                                        <img src="assets/img/team-2.png" alt="FC Barcelona">
-                                        <span>FC Barcelona</span>
-                                    </div>
-                                </div>
-                                <div class="match-item-footer gap-3">
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="match-item">
-                                <a href="#"></a>
-                                <div class="match-item-header">
-                                    <span class="match-league">UEFA Champions League</span>
-                                    <span class="match-date">
-                                        03:00 - 22/02
-                                    </span>
-                                </div>
-                                <div class="match-item-body">
-                                    <div class="match-team match-team-home">
-                                        <img src="assets/img/team-1.png" alt="Napoli">
-                                        <span>Napoli</span>
-                                    </div>
-                                    <div class="match-status">
-                                        <div class="match-time time-bg">HT</div>
-                                        <div class="match-score">1 - 1</div>
-                                    </div>
-                                    <div class="match-team match-team-away">
-                                        <img src="assets/img/team-2.png" alt="FC Barcelona">
-                                        <span>FC Barcelona</span>
-                                    </div>
-                                </div>
-                                <div class="match-item-footer gap-3">
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                    <div class="commentator">
-                                        <a href="#">
-                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <path d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z" fill="url(#pattern222371_1)" stroke="#FFC107"></path>
-                                                <path d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z" stroke="#FFC107"></path>
-                                                <defs>
-                                                    <pattern id="pattern222371_1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                        <use xlink:href="#kevin_img" transform="scale(0.000510204)"></use>
-                                                    </pattern>
-                                                    <image id="kevin_img" width="1960" height="1960" xlink:href="assets/img/kevin.jpg"></image>
-                                                </defs>
-                                            </svg>
-                                            <span>KEVIN</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="match-status">
+                      <div class="match-time time-bg">Hiệp 2: 90+'</div>
+                      <div class="match-score">1 - 1</div>
                     </div>
-                </div>
-                <div class="clearfix mb-2"> 
-                    <a href="#" class="btn btn-load-more">Xem thêm lịch trực tiếp <i class="fa-solid fa-down-long"></i></a>
-                </div>
-            </section>
-            <section class="news-section">
-                <div class="row">
-                    <div class="col-xl-8">
-                      <div class="section-title mb-3 d-flex align-items-center">
-                        <h4>Soi kèo <strong>bóng đá hôm nay</strong></h4>
-                        <a href="#">Tất cả</a>
-                      </div>
-                      <div class="row">
-                            <div class="post-item col-lg-4 post-featured">
-                        <div class="post-thumbnail">
-                          <a href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024/" rel="nofollow">
-                            <img width="800" height="450" src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Soi kèo Bologna vs Verona" srcset="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024.jpg 800w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024-300x169.jpg 300w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">          </a>
-                        </div>
-                        <div class="post-title"><h3><a title="Nhận định soi kèo Bologna vs Verona lúc 02h45 ngày 24/2/2024" href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024/">Nhận định soi kèo Bologna vs Verona lúc 02h45 ngày 24/2/2024</a></h3></div>
-                      </div>
-                            <div class="post-item col-lg-4">
-                        <div class="post-thumbnail">
-                          <a href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024/" rel="nofollow">
-                            <img width="800" height="450" src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Soi kèo Metz vs Lyon" srcset="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024.jpg 800w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024-300x169.jpg 300w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">          </a>
-                        </div>
-                        <div class="post-title"><h3><a title="Nhận định soi kèo Metz vs Lyon lúc 03h00 ngày 24/2/2024" href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024/">Nhận định soi kèo Metz vs Lyon lúc 03h00 ngày 24/2/2024</a></h3></div>
-                      </div>
-                            <div class="post-item col-lg-4">
-                        <div class="post-thumbnail">
-                          <a href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024/" rel="nofollow">
-                            <img width="800" height="450" src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Soi kèo Hà Tĩnh vs Khánh Hòa" srcset="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024-1.jpg 800w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024-1-300x169.jpg 300w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024-1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">          </a>
-                        </div>
-                        <div class="post-title"><h3><a title="Nhận định soi kèo Hà Tĩnh vs Khánh Hòa lúc 17h00 ngày 23/2/2024" href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024/">Nhận định soi kèo Hà Tĩnh vs Khánh Hòa lúc 17h00 ngày 23/2/2024</a></h3></div>
-                      </div>
-                            <div class="post-item col-lg-4">
-                        <div class="post-thumbnail">
-                          <a href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024/" rel="nofollow">
-                            <img width="800" height="450" src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Soi kèo HAGL vs Quảng Nam" srcset="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024.jpg 800w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024-300x169.jpg 300w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">          </a>
-                        </div>
-                        <div class="post-title"><h3><a title="Nhận định soi kèo HAGL vs Quảng Nam lúc 17h00 ngày 23/2/2024" href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024/">Nhận định soi kèo HAGL vs Quảng Nam lúc 17h00 ngày 23/2/2024</a></h3></div>
-                      </div>
-                            <div class="post-item col-lg-4">
-                        <div class="post-thumbnail">
-                          <a href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024/" rel="nofollow">
-                            <img width="800" height="450" src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Soi kèo Leeds vs Leicester" srcset="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024.jpg 800w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024-300x169.jpg 300w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">          </a>
-                        </div>
-                        <div class="post-title"><h3><a title="Nhận định soi kèo Leeds vs Leicester lúc 03h00 ngày 24/2/2024" href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024/">Nhận định soi kèo Leeds vs Leicester lúc 03h00 ngày 24/2/2024</a></h3></div>
-                      </div>
-                            <div class="post-item col-lg-4">
-                        <div class="post-thumbnail">
-                          <a href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024/" rel="nofollow">
-                            <img width="800" height="450" src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Soi kèo Bodo Glimt vs Ajax" srcset="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024-1.jpg 800w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024-1-300x169.jpg 300w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024-1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">          </a>
-                        </div>
-                        <div class="post-title"><h3><a title="Nhận định soi kèo Bodo Glimt vs Ajax lúc 0h45 ngày 23/2/2024" href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024/">Nhận định soi kèo Bodo Glimt vs Ajax lúc 0h45 ngày 23/2/2024</a></h3></div>
-                      </div>
-                            <div class="post-item col-lg-4">
-                        <div class="post-thumbnail">
-                          <a href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024/" rel="nofollow">
-                            <img width="800" height="450" src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Soi kèo Qarabag vs Braga" srcset="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024-1.jpg 800w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024-1-300x169.jpg 300w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024-1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">          </a>
-                        </div>
-                        <div class="post-title"><h3><a title="Nhận định soi kèo Qarabag vs Braga lúc 0h45 ngày 23/2/2024" href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024/">Nhận định soi kèo Qarabag vs Braga lúc 0h45 ngày 23/2/2024</a></h3></div>
-                      </div>
-                            <div class="post-item col-lg-4">
-                        <div class="post-thumbnail">
-                          <a href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024/" rel="nofollow">
-                            <img width="800" height="450" src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Soi kèo Freiburg vs Lens" srcset="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024-1.jpg 800w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024-1-300x169.jpg 300w, https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024-1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">          </a>
-                        </div>
-                        <div class="post-title"><h3><a title="Nhận định soi kèo Freiburg vs Lens lúc 0h45 ngày 23/2/2024" href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024/">Nhận định soi kèo Freiburg vs Lens lúc 0h45 ngày 23/2/2024</a></h3></div>
-                      </div>
-                             </div>  
+                    <div class="match-team match-team-away">
+                      <img src="assets/img/team-2.png" alt="FC Barcelona" />
+                      <span>FC Barcelona</span>
                     </div>
-                    <div class="col-xl-4 pl-lg-0">
-                      <div class="widget">
+                  </div>
+                  <div class="match-item-footer gap-3">
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="match-item match-hot">
+                  <a href="#"></a>
+                  <div class="match-item-header">
+                    <span class="match-league">UEFA Champions League</span>
+                    <span class="match-date"> 03:00 - 22/02 </span>
+                  </div>
+                  <div class="match-item-body">
+                    <div class="match-team match-team-home">
+                      <img src="assets/img/team-1.png" alt="Napoli" />
+                      <span>Napoli</span>
+                    </div>
+                    <div class="match-status">
+                      <div class="match-time d-none"></div>
+                      <div class="match-vs">vs</div>
+                    </div>
+                    <div class="match-team match-team-away">
+                      <img src="assets/img/team-2.png" alt="FC Barcelona" />
+                      <span>FC Barcelona</span>
+                    </div>
+                  </div>
+                  <div class="match-item-footer gap-3">
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="match-item match-hot">
+                  <a href="#"></a>
+                  <div class="match-item-header">
+                    <span class="match-league">UEFA Champions League</span>
+                    <span class="match-date"> 03:00 - 22/02 </span>
+                  </div>
+                  <div class="match-item-body">
+                    <div class="match-team match-team-home">
+                      <img src="assets/img/team-1.png" alt="Napoli" />
+                      <span>Napoli</span>
+                    </div>
+                    <div class="match-status">
+                      <div class="match-time d-none"></div>
+                      <div class="match-vs">vs</div>
+                    </div>
+                    <div class="match-team match-team-away">
+                      <img src="assets/img/team-2.png" alt="FC Barcelona" />
+                      <span>FC Barcelona</span>
+                    </div>
+                  </div>
+                  <div class="match-item-footer gap-3">
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="match-item">
+                  <a href="#"></a>
+                  <div class="match-item-header">
+                    <span class="match-league">UEFA Champions League</span>
+                    <span class="match-date"> 03:00 - 22/02 </span>
+                  </div>
+                  <div class="match-item-body">
+                    <div class="match-team match-team-home">
+                      <img src="assets/img/team-1.png" alt="Napoli" />
+                      <span>Napoli</span>
+                    </div>
+                    <div class="match-status">
+                      <div class="match-time time-bg">Kết thúc</div>
+                      <div class="match-score">1 - 1</div>
+                    </div>
+                    <div class="match-team match-team-away">
+                      <img src="assets/img/team-2.png" alt="FC Barcelona" />
+                      <span>FC Barcelona</span>
+                    </div>
+                  </div>
+                  <div class="match-item-footer gap-3">
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="match-item">
+                  <a href="#"></a>
+                  <div class="match-item-header">
+                    <span class="match-league">UEFA Champions League</span>
+                    <span class="match-date"> 03:00 - 22/02 </span>
+                  </div>
+                  <div class="match-item-body">
+                    <div class="match-team match-team-home">
+                      <img src="assets/img/team-1.png" alt="Napoli" />
+                      <span>Napoli</span>
+                    </div>
+                    <div class="match-status">
+                      <div class="match-time time-bg">Hiệp 1: 45+'</div>
+                      <div class="match-score">1 - 1</div>
+                    </div>
+                    <div class="match-team match-team-away">
+                      <img src="assets/img/team-2.png" alt="FC Barcelona" />
+                      <span>FC Barcelona</span>
+                    </div>
+                  </div>
+                  <div class="match-item-footer gap-3">
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="match-item">
+                  <a href="#"></a>
+                  <div class="match-item-header">
+                    <span class="match-league">UEFA Champions League</span>
+                    <span class="match-date"> 03:00 - 22/02 </span>
+                  </div>
+                  <div class="match-item-body">
+                    <div class="match-team match-team-home">
+                      <img src="assets/img/team-1.png" alt="Napoli" />
+                      <span>Napoli</span>
+                    </div>
+                    <div class="match-status">
+                      <div class="match-time time-bg">HT</div>
+                      <div class="match-score">1 - 1</div>
+                    </div>
+                    <div class="match-team match-team-away">
+                      <img src="assets/img/team-2.png" alt="FC Barcelona" />
+                      <span>FC Barcelona</span>
+                    </div>
+                  </div>
+                  <div class="match-item-footer gap-3">
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                    <div class="commentator">
+                      <a href="#">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681Z"
+                            fill="url(#pattern222371_1)"
+                            stroke="#FFC107"
+                          ></path>
+                          <path
+                            d="M8.76718 2.96682C10.6949 1.56627 13.3051 1.56627 15.2328 2.96681L19.5921 6.134C21.5198 7.53454 22.3264 10.0171 21.5901 12.2832L19.925 17.4078C19.1887 19.6739 17.0769 21.2082 14.6942 21.2082H9.30583C6.92309 21.2082 4.81133 19.6739 4.07502 17.4078L2.40993 12.2832C1.67363 10.0171 2.48025 7.53454 4.40793 6.134L8.76718 2.96682Z"
+                            stroke="#FFC107"
+                          ></path>
+                          <defs>
+                            <pattern
+                              id="pattern222371_1"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#kevin_img"
+                                transform="scale(0.000510204)"
+                              ></use>
+                            </pattern>
+                            <image
+                              id="kevin_img"
+                              width="1960"
+                              height="1960"
+                              xlink:href="assets/img/kevin.jpg"
+                            ></image>
+                          </defs>
+                        </svg>
+                        <span>KEVIN</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix mb-2">
+            <a href="#" class="btn btn-load-more"
+              >Xem thêm lịch trực tiếp <i class="fa-solid fa-down-long"></i
+            ></a>
+          </div>
+        </section>
+        <section class="news-section">
+          <div class="row">
+            <div class="col-xl-8">
+              <div class="section-title mb-3 d-flex align-items-center">
+                <h4>Soi kèo <strong>bóng đá hôm nay</strong></h4>
+                <a href="#">Tất cả</a>
+              </div>
+              <div class="row">
+                <div class="post-item col-lg-4 post-featured">
+                  <div class="post-thumbnail">
+                    <a
+                      href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024/"
+                      rel="nofollow"
+                    >
+                      <img
+                        width="800"
+                        height="450"
+                        src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Soi kèo Bologna vs Verona"
+                        srcset="
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024.jpg         800w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024-300x169.jpg 300w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024-768x432.jpg 768w
+                        "
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a
+                        title="Nhận định soi kèo Bologna vs Verona lúc 02h45 ngày 24/2/2024"
+                        href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-bologna-vs-verona-luc-02h45-ngay-24-2-2024/"
+                        >Nhận định soi kèo Bologna vs Verona lúc 02h45 ngày
+                        24/2/2024</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="post-item col-lg-4">
+                  <div class="post-thumbnail">
+                    <a
+                      href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024/"
+                      rel="nofollow"
+                    >
+                      <img
+                        width="800"
+                        height="450"
+                        src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Soi kèo Metz vs Lyon"
+                        srcset="
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024.jpg         800w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024-300x169.jpg 300w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024-768x432.jpg 768w
+                        "
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a
+                        title="Nhận định soi kèo Metz vs Lyon lúc 03h00 ngày 24/2/2024"
+                        href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-metz-vs-lyon-luc-03h00-ngay-24-2-2024/"
+                        >Nhận định soi kèo Metz vs Lyon lúc 03h00 ngày
+                        24/2/2024</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="post-item col-lg-4">
+                  <div class="post-thumbnail">
+                    <a
+                      href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024/"
+                      rel="nofollow"
+                    >
+                      <img
+                        width="800"
+                        height="450"
+                        src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024-1.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Soi kèo Hà Tĩnh vs Khánh Hòa"
+                        srcset="
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024-1.jpg         800w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024-1-300x169.jpg 300w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024-1-768x432.jpg 768w
+                        "
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a
+                        title="Nhận định soi kèo Hà Tĩnh vs Khánh Hòa lúc 17h00 ngày 23/2/2024"
+                        href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-ha-tinh-vs-khanh-hoa-luc-17h00-ngay-23-2-2024/"
+                        >Nhận định soi kèo Hà Tĩnh vs Khánh Hòa lúc 17h00 ngày
+                        23/2/2024</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="post-item col-lg-4">
+                  <div class="post-thumbnail">
+                    <a
+                      href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024/"
+                      rel="nofollow"
+                    >
+                      <img
+                        width="800"
+                        height="450"
+                        src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Soi kèo HAGL vs Quảng Nam"
+                        srcset="
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024.jpg         800w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024-300x169.jpg 300w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024-768x432.jpg 768w
+                        "
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a
+                        title="Nhận định soi kèo HAGL vs Quảng Nam lúc 17h00 ngày 23/2/2024"
+                        href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-hagl-vs-quang-nam-luc-17h00-ngay-23-2-2024/"
+                        >Nhận định soi kèo HAGL vs Quảng Nam lúc 17h00 ngày
+                        23/2/2024</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="post-item col-lg-4">
+                  <div class="post-thumbnail">
+                    <a
+                      href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024/"
+                      rel="nofollow"
+                    >
+                      <img
+                        width="800"
+                        height="450"
+                        src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Soi kèo Leeds vs Leicester"
+                        srcset="
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024.jpg         800w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024-300x169.jpg 300w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024-768x432.jpg 768w
+                        "
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a
+                        title="Nhận định soi kèo Leeds vs Leicester lúc 03h00 ngày 24/2/2024"
+                        href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-leeds-vs-leicester-luc-03h00-ngay-24-2-2024/"
+                        >Nhận định soi kèo Leeds vs Leicester lúc 03h00 ngày
+                        24/2/2024</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="post-item col-lg-4">
+                  <div class="post-thumbnail">
+                    <a
+                      href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024/"
+                      rel="nofollow"
+                    >
+                      <img
+                        width="800"
+                        height="450"
+                        src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024-1.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Soi kèo Bodo Glimt vs Ajax"
+                        srcset="
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024-1.jpg         800w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024-1-300x169.jpg 300w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024-1-768x432.jpg 768w
+                        "
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a
+                        title="Nhận định soi kèo Bodo Glimt vs Ajax lúc 0h45 ngày 23/2/2024"
+                        href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-bodo-glimt-vs-ajax-luc-0h45-ngay-23-2-2024/"
+                        >Nhận định soi kèo Bodo Glimt vs Ajax lúc 0h45 ngày
+                        23/2/2024</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="post-item col-lg-4">
+                  <div class="post-thumbnail">
+                    <a
+                      href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024/"
+                      rel="nofollow"
+                    >
+                      <img
+                        width="800"
+                        height="450"
+                        src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024-1.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Soi kèo Qarabag vs Braga"
+                        srcset="
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024-1.jpg         800w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024-1-300x169.jpg 300w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024-1-768x432.jpg 768w
+                        "
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a
+                        title="Nhận định soi kèo Qarabag vs Braga lúc 0h45 ngày 23/2/2024"
+                        href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-qarabag-vs-braga-luc-0h45-ngay-23-2-2024/"
+                        >Nhận định soi kèo Qarabag vs Braga lúc 0h45 ngày
+                        23/2/2024</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="post-item col-lg-4">
+                  <div class="post-thumbnail">
+                    <a
+                      href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024/"
+                      rel="nofollow"
+                    >
+                      <img
+                        width="800"
+                        height="450"
+                        src="https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024-1.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Soi kèo Freiburg vs Lens"
+                        srcset="
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024-1.jpg         800w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024-1-300x169.jpg 300w,
+                          https://cdn.xoilac100.tv/2024/02/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024-1-768x432.jpg 768w
+                        "
+                        sizes="(max-width: 800px) 100vw, 800px"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a
+                        title="Nhận định soi kèo Freiburg vs Lens lúc 0h45 ngày 23/2/2024"
+                        href="https://xoilac100.tv/soi-keo/nhan-dinh-soi-keo-freiburg-vs-lens-luc-0h45-ngay-23-2-2024/"
+                        >Nhận định soi kèo Freiburg vs Lens lúc 0h45 ngày
+                        23/2/2024</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 pl-lg-0">
+              <div class="widget">
                 <div class="section-title mb-3">
-                    <span>Top <strong>nhà cái</strong>
-                    </span>
+                  <span>Top <strong>nhà cái</strong> </span>
                 </div>
                 <div class="widget-offers__list offer-rating">
-                    <div class="offer">
+                  <div class="offer">
                     <div class="offer__content__wrapper">
                       <div class="offer__content row m-0">
                         <div class="offer__number">
@@ -669,15 +1173,29 @@
                         <div class="offer__site offer__col">
                           <div class="offer__site__wrap">
                             <div class="offer__logo">
-                              <a href="https://8xbe201.com" target="_blank" rel="nofollow" class="" data-link="" data-hash="">
-                                <img class="lazy img-fluid" src="https://i-imgur-com.cdn.ampproject.org/i/s/i.imgur.com/zqDHGSn.png" title="8XBET" alt="8XBET">
+                              <a
+                                href="https://8xbe201.com"
+                                target="_blank"
+                                rel="nofollow"
+                                class=""
+                                data-link=""
+                                data-hash=""
+                              >
+                                <img
+                                  class="lazy img-fluid"
+                                  src="https://i-imgur-com.cdn.ampproject.org/i/s/i.imgur.com/zqDHGSn.png"
+                                  title="8XBET"
+                                  alt="8XBET"
+                                />
                               </a>
                             </div>
                           </div>
                         </div>
                         <div class="offer__rating offer__col">
                           <div class="score-component">
-                            <div class="score__text">BH thể thao cược đầu hoàn 100%</div>
+                            <div class="score__text">
+                              BH thể thao cược đầu hoàn 100%
+                            </div>
                             <!-- <div class="score__price"></div>
                             <div class="score__stars">
                               <i class="fa fa-star"></i>
@@ -688,28 +1206,32 @@
                             </div> -->
                           </div>
                           <div class="offer__buttons offer__bet__col">
-                            <a href="https://8xbe201.com" target="_blank" rel="nofollow" class="offer__btn " data-link="" data-hash="">Đặt cược</a>
+                            <a
+                              href="https://8xbe201.com"
+                              target="_blank"
+                              rel="nofollow"
+                              class="offer__btn"
+                              data-link=""
+                              data-hash=""
+                              >Đặt cược</a
+                            >
                             <!-- <a href="" class="btn btn-sm btn-danger offer__more">Xem Đánh Giá</a> -->
                           </div>
                         </div>
-                        
                       </div>
                     </div>
                   </div>
                 </div>
-                </div> 
-                    </div>
-                  </div>
-            </section>
-            <section class="video-section"></section>
-            <section class="about-section"></section>
-        </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video-section"></section>
+        <section class="about-section"></section>
+      </div>
     </div>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script type="module" src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
