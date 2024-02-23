@@ -303,7 +303,7 @@ body {
         }
       }
       .btn-load-more {
-        background: #1a1d23;
+        background: $secondary-color;
         border-radius: 6px;
         width: 100%;
         display: block;
@@ -323,7 +323,7 @@ body {
       .post-item {
         padding: 0px;
         .post-title {
-          background: linear-gradient(90deg, #1a1d23 0%, #141417 100%);
+          background: linear-gradient(90deg, $secondary-color 0%, #141417 100%);
           min-height: 165px;
           padding: 30px 20px;
           position: relative;
@@ -446,7 +446,7 @@ body {
           -ms-flex: 0 0 100%;
           flex: 0 0 100%;
           max-width: 100%;
-          background: linear-gradient(90deg, #1a1d23 0%, #141417 100%);
+          background: linear-gradient(90deg, $secondary-color 0%, #141417 100%);
           .post-thumbnail {
             -webkit-box-flex: 0;
             -ms-flex: 0 0 41.66667%;
@@ -491,7 +491,7 @@ body {
             }
           }
           &.post-featured {
-            background: linear-gradient(90deg, #1a1d23 0%, #141417 100%);
+            background: linear-gradient(90deg, $secondary-color 0%, #141417 100%);
             .post-title {
               margin-top: 0px;
               padding: 15px;
@@ -511,7 +511,7 @@ body {
       }
 
       .offer {
-        background: #1a1d23;
+        background: $secondary-color;
         margin-bottom: 15px;
         position: relative;
         border-radius: 2px;
@@ -653,7 +653,7 @@ body {
 
       .post-item {
         .post-title {
-          background: linear-gradient(90deg, #1a1d23 0%, #141417 100%);
+          background: linear-gradient(90deg, $secondary-color 0%, #141417 100%);
           min-height: 110px;
           padding: 15px 20px;
           position: relative;
@@ -776,15 +776,15 @@ body {
       }
     }
     section.about-section {
-      #toc_container {
+      #toc-container {
         width: 100%;
         background: #141417;
         padding: 0px;
         border: none;
-        .toc_title {
+        .toc-title {
           display: none;
         }
-        ul.toc_list {
+        ul.toc-list {
           margin: 0px !important;
           > li {
             list-style: none;
@@ -801,14 +801,14 @@ body {
               transition: all 0.4s;
               text-decoration: none;
               &:hover {
-                background: #1a1d23;
+                background: $secondary-color;
                 border-radius: 6px 0px 0px 6px;
               }
-            }
-            &:first-child {
-              > a {
-                background: #1a1d23;
-                border-radius: 6px 0px 0px 6px;
+              &.toc-item {
+                &.active {
+                  background: $secondary-color;
+                  border-radius: 6px 0px 0px 6px;
+                }
               }
             }
           }
@@ -822,7 +822,7 @@ body {
         padding-right: 20px;
         // padding-left: 32%;
         position: relative;
-        background: #1a1d23;
+        background: $secondary-color;
         max-height: 710px;
         overflow-y: scroll;
         font-style: normal;
