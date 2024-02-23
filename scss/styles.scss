@@ -105,6 +105,16 @@ $success: #7952b3;
 $secondary-color: #1a1d23;
 $font-osw: "Oswald", sans-serif;
 
+// Custom SCSS
+@import "icon-list";
+@import "header";
+@import "body";
+@import "footer";
+
+a {
+  text-decoration: none;
+}
+
 @media  screen and (min-width: 1280px) {
   .container {
     max-width: 1360px;
@@ -114,13 +124,4 @@ $font-osw: "Oswald", sans-serif;
   .container {
     max-width: 1360px;
   }
-}
-
-// Custom SCSS
-@import "icon-list";
-@import "header";
-@import "body";
-
-a {
-  text-decoration: none;
 }

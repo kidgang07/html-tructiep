@@ -1,0 +1,41 @@
+footer.page-footer {
+	background-image: url(../assets/img/footer_bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	
+	.text-center,a {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 22px;
+		text-align: center;
+		color: #AFB4BA;
+	}
+	#menu-footer {
+		li {
+			a {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 13px;
+				line-height: 18px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #009B3A;
+				display: block;
+				padding: 0.5rem 1rem; 
+			}
+		}
+	}
+	@media screen and (min-width: 992px) {
+		.container {padding: 0px 120px;}
+	}
+	ul {
+		padding: 0;
+		background-image: none;
+	}
+	li {
+		list-style: none;
+	}
+}
