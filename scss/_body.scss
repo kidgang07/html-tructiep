@@ -882,6 +882,6 @@ body {
 
 .aligncenter {
   display: block;
-  margin: ($spacer / 2) auto;
+  margin: calc($spacer / 2) auto;
   height: auto;
 }
