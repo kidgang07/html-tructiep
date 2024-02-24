@@ -75,6 +75,7 @@ body {
                 text-transform: uppercase;
                 font-size: 13px;
                 position: relative;
+                font-family: $font-rlw;
 
                 span {
                   font-style: normal;
@@ -87,7 +88,7 @@ body {
                   font-family: $font-osw;
                 }
 
-                &.active {
+                &.active, &:hover  {
                   font-weight: bold;
 
                   span {
@@ -147,7 +148,7 @@ body {
           outline: none;
           color: #dadbdb;
           height: 50px;
-          font-family: "Raleway", sans-serif;
+          font-family: $font-rlw;
           font-style: normal;
           font-weight: 500;
           font-size: 13px;
@@ -184,7 +185,7 @@ body {
 
           .match-league {
             font-weight: 700;
-            font-family: "Raleway", sans-serif;
+            font-family: $font-rlw;
             font-size: 13px;
             line-height: 20px;
             color: #fff;
@@ -238,7 +239,7 @@ body {
             align-items: center;
 
             .match-time {
-              font-family: "Raleway", sans-serif;
+              font-family: $font-rlw;
               font-style: normal;
               font-weight: 500;
               font-size: 13px;
@@ -289,6 +290,15 @@ body {
           padding: 0px 0.9rem;
           align-items: center;
           display: flex;
+          justify-content: space-between;
+          ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            li {
+              list-style-type: none;
+            }
+          }
 
           .commentator {
             z-index: 1;
@@ -301,6 +311,24 @@ body {
               font-style: normal;
               font-weight: 700;
               line-height: 1rem;
+            }
+          }
+
+          .btn-action {
+            .btn-odds{
+              background: linear-gradient(96deg, #008360 -2.23%, #49EC44 117.28%);
+              border-radius: 2px;
+              color: #FFF;
+              text-align: center;
+              font-family: 'Oswald';
+              font-size: 0.6875rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 1.125rem;
+              text-transform: uppercase;
+              padding: 0.25rem 0.75rem;
+              position: relative;
+              z-index: 2;
             }
           }
 
