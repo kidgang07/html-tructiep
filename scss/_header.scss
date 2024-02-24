@@ -78,9 +78,7 @@ header {
             color: #000 !important;
         }
       }
-    }
-
-    li:last-child {
+      &.nav-item-bdInfo {
         margin-left: 0;
       a {
         color: transparent !important;
@@ -91,6 +89,7 @@ header {
         white-space: nowrap;
         background-size: cover !important;
       }
+    }
     }
   }
   .sub-menu {

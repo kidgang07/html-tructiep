@@ -565,22 +565,22 @@ body {
       overflow: hidden;
       padding: 26px 0px;
 
-      &:last-child {
+      &.offer_last_item {
         margin-bottom: 0px;
       }
 
-      &__content__wrapper {}
+      &_content_wrapper {}
 
-      &__content {}
+      &_content {}
 
-      &__col {
+      &_col {
         display: flex;
         flex: 1 0 0%;
         flex-direction: column;
         padding: 0;
       }
 
-      &__number {
+      &_number {
         position: absolute;
         left: 0;
         top: 0;
@@ -603,9 +603,9 @@ body {
         }
       }
 
-      &__site {}
+      &_site {}
 
-      &__logo {
+      &_logo {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -630,7 +630,7 @@ body {
       }
 
       .score {
-        &__text {
+        &_text {
           font-weight: 400;
           font-size: 13px;
           line-height: 20px;
@@ -638,7 +638,7 @@ body {
           color: #ffffff;
         }
 
-        &__price {
+        &_price {
           font-family: $font-osw;
           font-style: normal;
           font-weight: 600;
@@ -649,7 +649,7 @@ body {
           @include rem("margin-bottom", 12);
         }
 
-        &__stars {
+        &_stars {
           i {
             color: #ffba00;
             @include rem("font-size", 16);
@@ -665,12 +665,12 @@ body {
         margin-bottom: 1rem;
       }
 
-      .offer__buttons {
+      .offer_buttons {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        .offer__btn {
+        .offer_btn {
           background: linear-gradient(85.59deg,
               #009b3a -8.29%,
               #009b3a 62.2%,
@@ -686,7 +686,7 @@ body {
       }
 
       &:first-child {
-        .offer__number {
+        .offer_number {
           background: #e11d23;
 
           span {
