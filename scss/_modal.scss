@@ -1,0 +1,54 @@
+#registerModal {
+    .modal-header {
+        align-items: center;
+        border: none;
+        
+        h1 {
+            color: #000;
+            margin: auto;
+        }
+        .btn-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+    .btn-primary {
+        width: 100%;
+    }
+    
+    .btn {
+        align-items: center;
+        margin-bottom: 5px;
+        height: 35px;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 100%;
+        font-size: 12px;
+    }
+    .btn-facebook {
+        background-color: #4c69ba;
+    }
+    .btn-google {
+        background-color: #fff;
+        color: rgba(0,0,0,.65);
+        border-color: #d9d9d9;
+        &:hover{
+            color:#40a9ff;
+            border-color: #40a9ff;
+        }
+    }
+    .register-option{
+        border-top: 1px solid rgb(232, 232, 232);
+        padding-top: 5px;
+    }
+    .forget-pwd {
+        font-size: 14px;
+    }
+    .modal-body {
+        label { 
+            color: rgba(0,0,0,.65);
+            font-size: 14px;
+        }
+    }
+  }

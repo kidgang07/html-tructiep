@@ -77,7 +77,7 @@ $success: #7952b3;
 @import "bootstrap/scss/placeholders";
 
 // Helpers
-// @import "bootstrap/scss/helpers";
+@import "bootstrap/scss/helpers";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
@@ -95,6 +95,7 @@ $success: #7952b3;
 
 // our project needs Solid + Brands
 @import "../assets/third_party/fontawesome-free-6.5.1-web/scss/solid.scss";
+@import "../assets/third_party/fontawesome-free-6.5.1-web/scss/regular.scss";
 @import "../assets/third_party/fontawesome-free-6.5.1-web/scss/brands.scss";
 
 // Google Fonts
@@ -111,6 +112,10 @@ $font-rlw: "Raleway", sans-serif;;
 @import "header";
 @import "body";
 @import "footer";
+@import "static";
+@import "chat";
+@import "modal";
+
 
 a {
   text-decoration: none;
