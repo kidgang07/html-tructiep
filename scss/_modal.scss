@@ -1,54 +1,199 @@
 #registerModal {
-    .modal-header {
-        align-items: center;
-        border: none;
-        
-        h1 {
-            color: #000;
-            margin: auto;
-        }
-        .btn-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
+  .modal-header {
+    align-items: center;
+    border: none;
+
+    h1 {
+      margin: auto;
     }
-    .btn-primary {
-        width: 100%;
-    }
-    
-    .btn {
-        align-items: center;
-        margin-bottom: 5px;
-        height: 35px;
-        text-transform: uppercase;
-        font-weight: 500;
-        width: 100%;
-        font-size: 12px;
-    }
-    .btn-facebook {
-        background-color: #4c69ba;
-    }
-    .btn-google {
-        background-color: #fff;
-        color: rgba(0,0,0,.65);
-        border-color: #d9d9d9;
-        &:hover{
-            color:#40a9ff;
-            border-color: #40a9ff;
-        }
-    }
-    .register-option{
-        border-top: 1px solid rgb(232, 232, 232);
-        padding-top: 5px;
-    }
-    .forget-pwd {
-        font-size: 14px;
-    }
-    .modal-body {
-        label { 
-            color: rgba(0,0,0,.65);
-            font-size: 14px;
-        }
+    .btn-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
   }
+  .btn-primary {
+    width: 100%;
+  }
+
+  .btn {
+    align-items: center;
+    margin-bottom: 5px;
+    height: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    font-size: 12px;
+  }
+  .btn-facebook {
+    background-color: #4c69ba;
+  }
+  .btn-google {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.65);
+    border-color: #d9d9d9;
+    &:hover {
+      color: #40a9ff;
+      border-color: #40a9ff;
+    }
+  }
+  .register-option {
+    border-top: 1px solid rgb(232, 232, 232);
+    padding-top: 5px;
+  }
+  .forget-pwd {
+    font-size: 14px;
+  }
+}
+
+#accountModal {
+  .modal-body {
+    .account-avatar {
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 15px;
+      .avatar-rounded {
+        position: relative;
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+          .account-avatar-change {
+            display: flex !important;
+          }
+        }
+      }
+      img {
+        border-radius: 50%;
+        cursor: pointer;
+        max-width: 84px;
+        max-height: 84px;
+        width: 84px;
+        height: 84px;
+        object-fit: cover;
+      }
+      .account-avatar-change {
+        position: absolute;
+        width: 84px;
+        height: 84px;
+        top: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        color: white;
+        display: none;
+        flex-direction: column;
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
+    .account-name {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .account-level-container {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      width: 300px;
+      margin: auto;
+      max-width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      .account-level {
+        background-color: rgb(150, 150, 123);
+        padding: 2px 8px;
+        font-size: 12px;
+        cursor: default;
+        border-radius: 4px;
+        color: #fff;
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+      .account-level-progress {
+        flex: 1 1 0%;
+        .progress {
+          --bs-progress-height: 5px;
+        }
+      }
+      .account-level-progress-text {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+      }
+    }
+    .account-options {
+      display: flex;
+      flex-wrap: wrap;
+
+      .account-option {
+        display: flex;
+        align-items: center;
+        min-width: 200px;
+        flex: 1 1 0%;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 4px;
+        text-align: start;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+        cursor: pointer;
+        padding: 5px;
+        i {
+          font-size: 18px;
+        }
+        .icon-box {
+          display: flex;
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+.modal-header {
+  h1 {
+    color: #000;
+    font-size: 16px !important;
+  }
+}
+
+.modal-body {
+  label {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+  }
+  .attention-text {
+    color: rgb(207, 19, 34);
+  }
+  .action-box {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      display: flex;
+      align-items: center;
+      height: 25px;
+      font-size: 14px;
+      &.btn-back {
+        background-color: transparent;
+        color: #000;
+        border-color: #d9d9d9;
+        &:hover {
+          color: #40a9ff;
+          border-color: #40a9ff;
+        }
+      }
+    }
+  }
+}

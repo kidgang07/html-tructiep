@@ -224,8 +224,21 @@ function chatScrollBottom() {
   }
 }
 
+function avatarUpload () {
+  let avatarUpload = $('#avatarUpload');
+  let avatarUploadInput = $('#avatarUploadInput');
+
+  if (avatarUpload && avatarUploadInput) {
+    avatarUpload.onclick = function () {
+      console.log('clicked')
+      avatarUploadInput.click();
+    }
+  }
+}
+
 matchFilterActive();
 aboutListActive();
 liveBXH();
 viewHeight();
 chatScrollBottom();
+avatarUpload();

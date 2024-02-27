@@ -3018,15 +3018,17 @@
                 <div class="chat-register-sm">để tham gia bình luận</div>
             </div>
 
+            <!-- show msg input after user login -->
             <div class="message-input-wrapper">
                 <div class="input-group input-msg">
                     <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
                     <button type="button">
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
-                  </div>
-                  <div data-bs-toggle="modal" data-bs-target="#accountModal" class="account-settings"><i class="fa-solid fa-user"></i></div>
-                  <a target="_blank" href="chat.html"><i class="fa-solid fa-share-from-square"></i></a>
+                </div>
+                <div data-bs-toggle="modal" data-bs-target="#accountModal" class="account-settings"><i
+                        class="fa-solid fa-user"></i></div>
+                <a target="_blank" href="chat.html"><i class="fa-solid fa-share-from-square"></i></a>
             </div>
         </div>
     </div>
@@ -3040,10 +3042,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="#">
                         <div class="mb-3">
                             <label for="inputAccountName" class="form-label">Tên tài khoản</label>
-                            <input type="email" class="form-control" id="inputAccountName">
+                            <input type="text" class="form-control" id="inputAccountName">
                         </div>
                         <div class="mb-3">
                             <label for="inputPassword" class="form-label">Mật khẩu</label>
@@ -3074,8 +3076,8 @@
         </div>
     </div>
 
-     <!-- Modal Account-->
-     <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+    <!-- Modal Account-->
+    <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -3083,7 +3085,102 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    
+                    <form action="#" class="form">
+                        <div class="account-avatar">
+                            <input type="file" id="avatarUploadInput" accept="image/*" style="display: none;">
+                            <div class="avatar-rounded" id="avatarUpload">
+                                <img src="assets/img/user-avatar.png">
+                                <div class="account-avatar-change">
+                                    <i class="fa-solid fa-camera camera-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="account-name">HJkluio Asd</div>
+                            <div class="account-level-container gap-2">
+                                <span class="account-level">lv1</span>
+                                <div class="account-level-progress">
+                                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 75%"></div>
+                                  </div>
+                                </div>
+                                <span class="account-level-progress-text">0/500</span>
+                            </div>
+                        </div>
+                        <div class="account-options gap-2">
+                            <div class="account-option account-option-1 gap-2" data-bs-toggle="modal" data-bs-target="#editNameModal">
+                                <div class="icon-box">
+                                <i class="fa-regular fa-address-card"></i> 
+                            </div>
+                                <span>Thay đổi thông tin</span>
+                            </div>
+                            <div class="account-option account-option-2 gap-2" data-bs-toggle="modal" data-bs-target="#editPasswordModal">
+                                <div class="icon-box">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                                <span>Đổi mật khẩu</span>
+                            </div>
+                            <div class="account-option account-option-3 gap-2">
+                                <div class="icon-box">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                </div>
+                                <span>Đăng xuất</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editNameModal" tabindex="-1" aria-labelledby="editNameModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="accountModalLabel">Cập nhật thông tin</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="form">
+                        <div class="mb-3">
+                            <label for="inputChangeAccountName" class="form-label">Biệt danh</label>
+                            <input type="text" class="form-control" id="inputChangeAccountName" aria-describedby="editNameAttention">
+                            <div id="editNameAttention" class="form-text attention-text">
+                                Lưu ý: tên chỉ được thay đổi 1 lần duy nhất
+                            </div>
+                        </div>
+                        <div class="action-box gap-2">
+                            <button type="submit" class="btn btn-primary">Lưu</button>
+                            <button type="button" class="btn btn-primary btn-back" data-bs-toggle="modal" data-bs-target="#accountModal">Huỷ bỏ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editPasswordModal" tabindex="-1" aria-labelledby="editPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="accountModalLabel">Cập nhật mật khẩu</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="form">
+                        <div class="mb-3">
+                            <label for="inputNewPassword" class="form-label">Mật khẩu mới</label>
+                            <input type="password" class="form-control" id="inputNewPassword" aria-describedby="editNameAttention">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputConfirmPassword" class="form-label">Nhập lại mật khẩu mới</label>
+                            <input type="password" class="form-control" id="inputConfirmPassword" aria-describedby="editNameAttention">
+                        </div>
+                        <div class="action-box gap-2">
+                            <button type="submit" class="btn btn-primary">Lưu</button>
+                            <button type="button" class="btn btn-primary btn-back" data-bs-toggle="modal" data-bs-target="#accountModal">Huỷ bỏ</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
