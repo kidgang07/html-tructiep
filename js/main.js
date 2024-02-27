@@ -201,11 +201,11 @@ function chatScrollBottom() {
   let btnScrollBottom = $(".list-scroll-bottom");
   if (btnScrollBottom) {
     let box = $(".list-scroll-wrapper");
-    
+
     if (box) {
-      // page on load scroll at the bottom 
+      // page on load scroll at the bottom
       box.scrollTop = box.scrollHeight;
-    
+
       box.addEventListener("scroll", (e) => {
         let scrollableHeight = box.scrollHeight - box.clientHeight;
 
@@ -219,21 +219,47 @@ function chatScrollBottom() {
 
       btnScrollBottom.onclick = function () {
         box.scrollTop = box.scrollHeight;
-      }
+      };
     }
   }
 }
 
-function avatarUpload () {
-  let avatarUpload = $('#avatarUpload');
-  let avatarUploadInput = $('#avatarUploadInput');
+function avatarUpload() {
+  let avatarUpload = $("#avatarUpload");
+  let avatarUploadInput = $("#avatarUploadInput");
 
   if (avatarUpload && avatarUploadInput) {
     avatarUpload.onclick = function () {
-      console.log('clicked')
       avatarUploadInput.click();
-    }
+    };
   }
+}
+
+function menuDropDown() {
+  let targets = $$(".company .oddContent >span");
+
+  if (targets) {
+    targets.forEach((target) => {
+      let parent = target.closest("div");
+      let menu = parent.querySelector("ul");
+      target.onclick = function () {
+        menu.classList.toggle("d-none");
+      };
+    });
+  }
+}
+
+function mobileShowBetInfo() {
+  $$(".match-bet-type span").forEach((item) => {
+    item.onclick = function () {
+      const index = this.getAttribute("data-type");
+      this.classList.toggle("active");
+
+      $$(`div[data-type="${index}"]`).forEach((type) => {
+        type.classList.toggle("h-on");
+      });
+    };
+  });
 }
 
 matchFilterActive();
@@ -242,3 +268,5 @@ liveBXH();
 viewHeight();
 chatScrollBottom();
 avatarUpload();
+menuDropDown();
+mobileShowBetInfo();
