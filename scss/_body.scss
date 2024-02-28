@@ -58,15 +58,19 @@ body {
         margin-bottom: 1rem;
 
         .matches-tab {
-          height: 50px;
+          min-height: 50px;
           background-color: $secondary-color;
           border-radius: 8px;
+          display: flex;
+          align-items: center;
 
           ul.tab-filter {
             list-style: none;
             padding: 0;
             margin: 0;
             height: 100%;
+            display: flex;
+            flex-wrap: wrap;
             align-items: center;
 
             li {
@@ -298,6 +302,8 @@ body {
               display: flex;
               margin: 0;
               padding: 0;
+              flex: 1;
+              overflow-x: auto;
               li {
                 list-style-type: none;
               }
@@ -305,7 +311,10 @@ body {
 
             .commentator {
               z-index: 1;
-
+              a {
+                display: flex;
+                align-items: center;
+              }
               span {
                 color: #fff;
                 text-align: center;
@@ -314,6 +323,7 @@ body {
                 font-style: normal;
                 font-weight: 700;
                 line-height: 1rem;
+                margin-left: 5px;
               }
             }
 
@@ -877,10 +887,6 @@ body {
             height: 128px;
           }
 
-          .post-thumbnail {
-            width: 100%;
-          }
-
           &.post-featured {
             img {
               height: 320px;
@@ -905,7 +911,7 @@ body {
 
         ul.toc-list {
           list-style: none;
-
+          padding: 0;
           ul {
             list-style: none;
             padding: 0;
@@ -983,6 +989,7 @@ body {
         img,
         iframe {
           max-width: 100%;
+          height: auto;
         }
 
         a {
@@ -1015,6 +1022,7 @@ body {
         }
       }
     }
+    
     section.match-bet-section {
       .match-result {
         background-image: url(../assets/img/match_info_bg.png);
@@ -1045,6 +1053,28 @@ body {
               font-size: 26px;
             }
           }
+        }
+        .match-timer {
+          &.kickoff-time p {
+            width: 40px;
+            height: 35px;
+            font-size: 21px;
+            color: #333;
+            background-color: #ffc107;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-family: $font-osw;
+        }
+        &.kickoff-time span {
+            color: #fff;
+            font-weight: 600;
+            font-size: 12px;
+            font-family: $font-osw;
+        }
         }
         .match-status {
           font-family: $font-osw;
@@ -1087,7 +1117,7 @@ body {
               height: 36px;
               margin-bottom: 2px;
             }
-            team-name {
+            .team-name {
               a {
                 font-size: 10px;
                 line-height: 16px;
@@ -1140,10 +1170,14 @@ body {
             }
           }
         }
+        @media screen and (max-width: 767px) { 
+            min-height: auto !important;
+        }
       }
 
       .single-tab {
         ul {
+          padding: 0;
           list-style: none;
           display: flex;
           background: #1a1d23;
@@ -1151,6 +1185,8 @@ body {
           align-items: center;
           justify-content: center;
           margin: 15px 0px;
+          overflow-x: auto;
+          white-space: nowrap;
         }
         ul li.li-first {
           border-left: 1px solid #33373d;
@@ -1191,7 +1227,7 @@ body {
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
-            background: #2A3038;
+            background: #2a3038;
             .pointer {
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -1406,7 +1442,7 @@ body {
           font-weight: 700;
           line-height: 14px;
           text-transform: uppercase;
-          background: #2A3038;
+          background: #2a3038;
           width: 30px;
           height: 28px;
           display: flex;
@@ -1471,10 +1507,6 @@ body {
         }
         @media screen and (max-width: 992px) {
           .match-bet {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
             .company {
               .pointer {
                 font-weight: 600;
@@ -1497,11 +1529,6 @@ body {
                 }
               }
             }
-          }
-          .match-bet .showOdds {
-            grid: 2;
-            display: grid;
-            grid-template-columns: 50px 1fr;
           }
         }
 
@@ -1551,11 +1578,7 @@ body {
             line-height: 1.125rem;
             /* 138.462% */
           }
-
-          /* .match-bet .showOdds {border-top: 1px solid #3D434D;} */
-          /* .showOdds .head-control {
-          border-right: 1px solid #3D434D;
-      } */
+      
           /* .showOdds .head-control:not(:first-child) {border-top: 1px solid #3D434D;} */
           .showOdds > .head-control.head-control-last {
             border-bottom: 0;
@@ -1595,9 +1618,6 @@ body {
             display: none;
           }
 
-          .teambox {
-            min-height: auto;
-          }
           .table .head {
             display: none;
           }
@@ -1614,6 +1634,7 @@ body {
 
           .match-bet .showOdds {
             grid: 3;
+            display: grid;
             grid-template-columns: 5.25rem 3.125rem 1fr;
           }
 
@@ -1677,6 +1698,7 @@ body {
         margin-left: 4px;
       }
     }
+    
     section.live-section {
       .player {
         .title-box {
@@ -1895,21 +1917,25 @@ body {
         }
       }
     }
+    
     section.fb-comment-section {
-        .content-box {
-          background: #1A1D23;
-          border-radius: 6px;
-          padding: 20px;
-          font-family: $font-rlw;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 25px;
-          color: #F2F3F3;
-          position: relative;
-          z-index: 1;
-          .fb-comments {background: #fff;margin-bottom: 15px;}
+      .content-box {
+        background: #1a1d23;
+        border-radius: 6px;
+        padding: 20px;
+        font-family: $font-rlw;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #f2f3f3;
+        position: relative;
+        z-index: 1;
+        .fb-comments {
+          background: #fff;
+          margin-bottom: 15px;
         }
+      }
     }
   }
 }
@@ -1919,3 +1945,70 @@ body {
   margin: calc($spacer / 2) auto;
   height: auto;
 }
+
+.wap-bottom {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0px;
+  height: auto;
+  width: 100%;
+  .menu-bottom {
+    background: #01b243;
+    margin-bottom: 0;
+    width: 100%;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        flex: 1;
+        position: relative;
+      }
+    }
+    li a {
+      font-family: "Oswald", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      color: #fff;
+      padding: 9px 12px;
+      display: block;
+      text-align: center;
+      &:after {
+        content: "";
+        height: 110%;
+        width: 1px;
+        background: #e8e8e8;
+        position: absolute;
+        -webkit-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);
+        top: -2px;
+        right: 0;
+        display: block;
+      }
+      &.last-menu-bottom {
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) { 
+  .tab-filter{
+    padding: 10px 0 !important; 
+    li {
+      padding: 5px 1rem !important;
+    }
+  }
+ }
+ @include media-breakpoint-down(md) { 
+  .single-tab {
+    ul {
+      justify-content: flex-start !important;
+    }
+  }
+ }

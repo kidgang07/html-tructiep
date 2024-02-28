@@ -6,90 +6,90 @@ header {
     padding-left: 310px;
   }
 
-  nav.navbar {
+  nav.navbar.navbar-pc {
     padding: 0;
     height: 100%;
-  }
-  .logo-sticky {
-    background: #fff;
-    z-index: 99;
-    left: -25px;
-    top: 0px;
-    position: absolute;
-    height: 104px;
-    border-top-right-radius: 104px;
-    border-bottom-right-radius: 104px;
-    padding-right: 30px;
-    padding-left: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: 250px;
-      height: 50px;
-      object-fit: contain;
-    }
-    &:before {
-      content: "";
+    .logo-sticky {
       background: #fff;
+      z-index: 99;
+      left: -25px;
+      top: 0px;
       position: absolute;
-      right: 100%;
-      height: 100%;
-      width: 100%;
-    }
-  }
-  a.navbar-brand {
-    background-color: #fff;
-    border-radius: 0 999px 999px 0;
-    margin-right: 0;
-    img {
-      width: 250px;
-      height: 50px;
-      object-fit: contain;
-      z-index: 2;
-    }
-  }
-
-  ul.navbar-nav {
-    height: 56px;
-    align-items: center;
-    a {
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 24px;
-      text-transform: uppercase;
-      color: #fff;
-      opacity: 0.85;
-      font-family: "Oswald", sans-serif;
-    }
-
-    li {
-      margin: 0 0.7rem;
-
-      &.top-dealer {
-        a {
-          background: #dc3444;
-        }
+      height: 104px;
+      border-top-right-radius: 104px;
+      border-bottom-right-radius: 104px;
+      padding-right: 30px;
+      padding-left: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 250px;
+        height: 50px;
+        object-fit: contain;
       }
-      &.nav-item-8xbet {
-        margin-right: 0;
-        a{
-            background: #ffc107;
-            color: #000 !important;
-        }
+      &:before {
+        content: "";
+        background: #fff;
+        position: absolute;
+        right: 100%;
+        height: 100%;
+        width: 100%;
       }
-      &.nav-item-bdInfo {
-        margin-left: 0;
+    }
+    a.navbar-brand {
+      background-color: #fff;
+      border-radius: 0 999px 999px 0;
+      margin-right: 0;
+      img {
+        width: 250px;
+        height: 50px;
+        object-fit: contain;
+        z-index: 2;
+      }
+    }
+  
+    ul.navbar-nav {
+      height: 56px;
+      align-items: center;
       a {
-        color: transparent !important;
-        display: inline-block;
-        width: 150px;
-        height: 40px;
-        background: url(../assets/img/bongdainfo.gif) no-repeat center center !important;
-        white-space: nowrap;
-        background-size: cover !important;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.85;
+        font-family: "Oswald", sans-serif;
       }
-    }
+  
+      li {
+        margin: 0 0.7rem;
+  
+        &.top-dealer {
+          a {
+            background: #dc3444;
+          }
+        }
+        &.nav-item-8xbet {
+          margin-right: 0;
+          a{
+              background: #ffc107;
+              color: #000 !important;
+          }
+        }
+        &.nav-item-bdInfo {
+          margin-left: 0;
+        a {
+          color: transparent !important;
+          display: inline-block;
+          width: 150px;
+          height: 40px;
+          background: url(../assets/img/bongdainfo.gif) no-repeat center center !important;
+          white-space: nowrap;
+          background-size: cover !important;
+        }
+      }
+      }
     }
   }
   .sub-menu {
@@ -112,55 +112,110 @@ header {
           display: block;
           font-family: $font-osw;
         }
-        &.style-1 {
-          a {
-            background: #28a745;
-            color: #fff;
+      }
+    }
+  }
+
+  .nav-mobile {
+    height: 56px;
+    .menu-mb {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+    }
+    .navbar {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      height: 56px;
+    }
+    .logo-cnt {
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      left: 0;
+      height: 56px;
+      background: #1A1D23;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+      padding: 11px 15px;
+      top: 0;
+      a {padding: 0px;}
+      img {
+        width: 90px;
+        height: 34px;
+        object-fit: contain;
+      }
+    }
+    .navbar-toggler {
+      position: absolute;
+      z-index: 9999;
+      right: 19px;
+      top: 15px;
+      padding: 0px;
+      border: 0px;
+      font-size: 18px;
+      outline: none;
+    }
+    .navbar-collapse {
+      &.show {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #04060B;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        z-index: 99;
+        padding-top: 96px;
+        &:after {
+          content: '';
+          background-image: url(../assets/img/bg-menu-mb.png);
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 290px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-position: center;
+        }
+      }
+    }
+    .navbar-nav {
+      @extend .row;
+      flex-direction: row;
+      li {
+        @extend .col-4;
+        margin-bottom: 40px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          font-family: $font-osw;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 24px;
+          text-align: center;
+          color: #AFB4BA;
+          i,span {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 8px;
           }
         }
-        &.style-2 {
-          a {
-            background: #fc5407;
-            color: #fff;
-          }
+        &.active {
+          a {color: #2AAB01;}
         }
-        &.style-3 {
+        &.menu-top-nha-cai {
           a {
-            background: #17a2b8;
-            color: #fff;
+            background: #dc3444;
           }
-        }
-        &.style-4 {
-          a {
-            background: #dc3545;
-            color: #fff;
-          }
-        }
-        &.style-5 {
-          a {
-            background: #032244;
-            color: #febc11;
-          }
-        }
-        &.style-6 {
-          a {
-            background: #0f4cd9;
-            color: #fff;
-          }
-        }
-        &.style-7 {
-          a {
-            background: #ffc107;
-            color: #000;
-          }
-        }
-        &.style-8 {
-          a {
-            background: #ce171f;
-            color: #fff;
-          }
-        }
-        &.style-9 {
         }
       }
     }
