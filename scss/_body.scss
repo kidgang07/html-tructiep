@@ -221,7 +221,7 @@ body {
               span {
                 color: #fff;
                 text-align: center;
-                font-family: "Raleway";
+                font-family: $font-rlw;
                 font-size: 0.8125rem;
                 font-style: normal;
                 font-weight: 600;
@@ -268,7 +268,7 @@ body {
                 display: block;
                 color: #fff;
                 text-align: center;
-                font-family: "Raleway";
+                font-family: $font-rlw;
                 font-size: 1.5rem;
                 font-style: normal;
                 font-weight: 700;
@@ -278,7 +278,7 @@ body {
               .match-vs {
                 color: #fff;
                 text-align: center;
-                font-family: "Raleway";
+                font-family: $font-rlw;
                 font-size: 2.5rem;
                 font-style: normal;
                 font-weight: 700;
@@ -309,7 +309,7 @@ body {
               span {
                 color: #fff;
                 text-align: center;
-                font-family: "Raleway";
+                font-family: $font-rlw;
                 font-size: 0.7875rem;
                 font-style: normal;
                 font-weight: 700;
@@ -327,7 +327,7 @@ body {
                 border-radius: 2px;
                 color: #fff;
                 text-align: center;
-                font-family: "Oswald";
+                font-family: $font-osw;
                 font-size: 0.6875rem;
                 font-style: normal;
                 font-weight: 700;
@@ -1159,7 +1159,7 @@ body {
           border-right: 1px solid #33373d;
         }
         ul li a {
-          font-family: "Oswald";
+          font-family: $font-osw;
           font-style: normal;
           font-weight: 400;
           font-size: 13px;
@@ -1191,6 +1191,7 @@ body {
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
+            background: #2A3038;
             .pointer {
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -1291,7 +1292,7 @@ body {
 
         .match-bet--mb .odds-type span {
           color: #fff;
-          font-family: "Oswald";
+          font-family: $font-osw;
           font-size: 0.6875rem;
           font-style: normal;
           font-weight: 500;
@@ -1375,7 +1376,7 @@ body {
           border: 0px;
           outline: none;
           color: #fff;
-          font-family: "Raleway";
+          font-family: $font-rlw;
           font-size: 12px;
           font-style: normal;
           font-weight: 400;
@@ -1399,12 +1400,19 @@ body {
         .match-bet .state span {
           color: #fff;
           text-align: center;
-          font-family: "Raleway";
+          font-family: $font-rlw;
           font-size: 12px;
           font-style: normal;
           font-weight: 700;
           line-height: 14px;
           text-transform: uppercase;
+          background: #2A3038;
+          width: 30px;
+          height: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
         }
 
         .match-bet .head {
@@ -1415,7 +1423,7 @@ body {
           height: 42px;
           color: #fff;
           text-align: center;
-          font-family: "Raleway";
+          font-family: $font-rlw;
           font-size: 13px;
           font-style: normal;
           font-weight: 500;
@@ -1430,7 +1438,7 @@ body {
           min-height: 42px;
           color: #fff;
           text-align: center;
-          font-family: "Raleway";
+          font-family: $font-rlw;
           font-size: 12px;
           font-style: normal;
           font-weight: 400;
@@ -1455,7 +1463,7 @@ body {
           flex: 1;
           justify-content: center;
           display: flex;
-          font-family: "Oswald";
+          font-family: $font-osw;
           font-size: 0.8125rem;
           font-style: normal;
           font-weight: 400;
@@ -1536,7 +1544,7 @@ body {
           .showOdds .head-control span {
             background: none;
             color: #fff;
-            font-family: "Raleway";
+            font-family: $font-rlw;
             font-size: 0.8125rem;
             font-style: normal;
             font-weight: 600;
@@ -1566,7 +1574,7 @@ body {
             margin: 0px;
             padding: 10px;
             color: #4fa747;
-            font-family: "Oswald";
+            font-family: $font-osw;
             font-size: 0.8125rem;
             font-style: normal;
             font-weight: 700;
@@ -1611,7 +1619,7 @@ body {
 
           .match-bet-type span {
             color: #fff;
-            font-family: "Oswald";
+            font-family: $font-osw;
             font-size: 0.6875rem;
             font-style: normal;
             font-weight: 500;
@@ -1807,7 +1815,7 @@ body {
             }
 
             .fb-share span {
-              font-family: Raleway;
+              font-family: $font-rlw;
               font-style: italic;
               font-weight: normal;
               font-size: 11px;
@@ -1886,6 +1894,22 @@ body {
           }
         }
       }
+    }
+    section.fb-comment-section {
+        .content-box {
+          background: #1A1D23;
+          border-radius: 6px;
+          padding: 20px;
+          font-family: $font-rlw;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          color: #F2F3F3;
+          position: relative;
+          z-index: 1;
+          .fb-comments {background: #fff;margin-bottom: 15px;}
+        }
     }
   }
 }
