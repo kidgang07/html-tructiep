@@ -153,15 +153,15 @@ body {
     padding: 0px 25px;
   }
   
-  .match_statistics .stnum span:first-child,
-  .match_statistics .stnum span:last-child {
-    /* font-family: 'Oswald'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-    color: #afb4ba;
-  }
+  // .match_statistics .stnum span:first-child,
+  // .match_statistics .stnum span:last-child {
+  //   /* font-family: 'Oswald'; */
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 15px;
+  //   line-height: 25px;
+  //   color: #afb4ba;
+  // }
   
   .match_statistics {
     background: #1c1e1f;
@@ -194,7 +194,7 @@ body {
   font-weight: bold;
   }
   
-  .match_statistics .stline>span:last-child {
+  .match_statistics .stline>span.stat-right {
     right: 0;
     left: auto;
   }
@@ -1359,7 +1359,7 @@ body {
   margin-bottom: 5px;
   padding: 8px;
   }
-  .h2h__row:last-child {
+  .h2h__row.h2h-last {
   margin-bottom: 0px;
   }
   .h2h__participant .event__logo {

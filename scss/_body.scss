@@ -732,7 +732,7 @@ body {
           }
         }
 
-        &:first-child {
+        &.offer-first {
           .offer_number {
             background: #e11d23;
 
@@ -1152,7 +1152,7 @@ body {
           justify-content: center;
           margin: 15px 0px;
         }
-        ul li:first-child {
+        ul li.li-first {
           border-left: 1px solid #33373d;
         }
         ul li {
@@ -1356,7 +1356,7 @@ body {
           padding: 0;
         }
 
-        .match-bet .table:last-child {
+        .match-bet .table.table-last {
           border: 0px;
         }
 
@@ -1388,9 +1388,9 @@ body {
           width: 100%;
         }
 
-        .match-bet .company .pointer:last-child {
-          margin-bottom: 0;
-        }
+        // .match-bet .company .pointer:last-child {
+        //   margin-bottom: 0;
+        // }
 
         .match-bet .state {
           width: 56px;
@@ -1453,7 +1453,7 @@ body {
           height: 84px;
         }
 
-        .match-bet .box:last-child {
+        .match-bet .box.box-last {
           border-bottom: 0px;
         }
 
@@ -1557,7 +1557,7 @@ body {
           border-right: 1px solid #3D434D;
       } */
           /* .showOdds .head-control:not(:first-child) {border-top: 1px solid #3D434D;} */
-          .showOdds > .head-control:last-child {
+          .showOdds > .head-control.head-control-last {
             border-bottom: 0;
           }
 
