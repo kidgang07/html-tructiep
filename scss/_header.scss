@@ -60,6 +60,9 @@ header {
         color: #fff;
         opacity: 0.85;
         font-family: "Oswald", sans-serif;
+        img {
+          height: 70px;
+        }
       }
   
       li {
@@ -215,6 +218,22 @@ header {
         &.menu-top-nha-cai {
           a {
             background: #dc3444;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-only(lg) {
+    background: #1a1d23;
+    .navbar-pc{
+      .container {
+        padding-left: unset;
+      }
+      .navbar-nav  {
+        .nav-item{
+          margin: 0 !important;
+          a.nav-link {
+            img {height: 25px;}
           }
         }
       }
