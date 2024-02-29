@@ -3045,14 +3045,14 @@
                     <form action="#">
                         <div class="mb-3">
                             <label for="inputAccountName" class="form-label">Tên tài khoản</label>
-                            <input type="text" class="form-control" id="inputAccountName">
+                            <input type="text" class="form-control" id="inputAccountName" required>
                         </div>
                         <div class="mb-3">
                             <label for="inputPassword" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="password" class="form-control" id="inputPassword" required>
                         </div>
                         <div class="text-end mb-2">
-                            <a href="#" class="forget-pwd">Quên mật khẩu?</a>
+                            <a href="#" class="forget-pwd" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Quên mật khẩu?</a>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-primary-2">Đăng nhập</button>
@@ -3144,7 +3144,7 @@
                     <form action="#" class="form">
                         <div class="mb-3">
                             <label for="inputChangeAccountName" class="form-label">Biệt danh</label>
-                            <input type="text" class="form-control" id="inputChangeAccountName" aria-describedby="editNameAttention">
+                            <input type="text" class="form-control" id="inputChangeAccountName" aria-describedby="editNameAttention" required>
                             <div id="editNameAttention" class="form-text attention-text">
                                 Lưu ý: tên chỉ được thay đổi 1 lần duy nhất
                             </div>
@@ -3170,15 +3170,38 @@
                     <form action="#" class="form">
                         <div class="mb-3">
                             <label for="inputNewPassword" class="form-label">Mật khẩu mới</label>
-                            <input type="password" class="form-control" id="inputNewPassword" aria-describedby="editNameAttention">
+                            <input type="password" class="form-control" id="inputNewPassword" aria-describedby="inputNewPassword" required>
                         </div>
                         <div class="mb-3">
                             <label for="inputConfirmPassword" class="form-label">Nhập lại mật khẩu mới</label>
-                            <input type="password" class="form-control" id="inputConfirmPassword" aria-describedby="editNameAttention">
+                            <input type="password" class="form-control" id="inputConfirmPassword" aria-describedby="inputConfirmPassword" required>
                         </div>
                         <div class="action-box gap-2">
                             <button type="submit" class="btn btn-primary">Lưu</button>
                             <button type="button" class="btn btn-primary btn-back" data-bs-toggle="modal" data-bs-target="#accountModal">Huỷ bỏ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="accountModalLabel">Quên mật khẩu?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="form">
+                        <div class="mb-3">
+                            <label for="inputPhoneNumber" class="form-label">Số điện thoại</label>
+                            <input type="tel" class="form-control" id="inputPhoneNumber" aria-describedby="inputPhoneNumber" required>
+                        </div>
+                        <div>Google reCaptcha</div>
+                        <div class="action-box gap-2">
+                            <button type="submit" class="btn" disabled>Gửi mã xác nhận</button>
                         </div>
                     </form>
                 </div>

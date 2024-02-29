@@ -197,3 +197,15 @@
     }
   }
 }
+
+#forgotPasswordModal {
+  .modal-body {
+    .action-box {
+      button {
+        color: #00000082;
+        background-color: #f5f5f5;
+        border-color: #9a9a9a;
+      }
+    }
+  }
+}
